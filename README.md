@@ -11,3 +11,7 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dr-Panakhov_python-project-49&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=dr-Panakhov_python-project-49)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dr-Panakhov_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=dr-Panakhov_python-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dr-Panakhov_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=dr-Panakhov_python-project-49)
+
+[![asciicast](https://asciinema.org/a/OEERFe9CmVLywMPw67wi5bEsA.svg)](https://asciinema.org/a/OEERFe9CmVLywMPw67wi5bEsA)
+
+[![asciicast](https://asciinema.org/a/Vh30DugHrcRBE5ECFXyF2mbk4.svg)](https://asciinema.org/a/Vh30DugHrcRBE5ECFXyF2mbk4)
