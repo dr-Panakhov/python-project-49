@@ -1,23 +1,8 @@
-import random
-from prompt import string
-# Приветствие
-print("Welcome to the Brain Games!")
-name = string('May I have your name? ')
-print(f'Hello, {name}!\nAnswer "yes" if the number is even, otherwise answer "no"')
-# Логика задачи
-def is_even():
-    richtige_anwort = 0
-    while richtige_anwort < 3:
-        ziffer = random.randrange(0, 100)
-        print(f"Question: {ziffer}")
-        user_antwort = input("Your answer: ").lower()
-        if (ziffer % 2 == 0 and user_antwort == 'yes') or (ziffer % 2 != 0 and user_antwort == 'no'):
-            print('Correct!')
-            richtige_anwort = richtige_anwort + 1
-        else:
-            print(f"'{user_antwort}' is wrong answer ;(. Correct answer was {"'yes'" if ziffer % 2 == 0 else "'no'"}.\nLet's try again, {name}!")
-            break
-    if richtige_anwort == 3:
-        print(f"Congratulations, {name}!")
+from brain_games.engine import play
+from brain_games.games import even
+
 def main():
-    is_even()
+    play(even)
+
+if __name__ == '__main__':
+    main()
