@@ -1,4 +1,5 @@
 from random import randint
+
 beschreibung = 'What number is missing in the progression?'
 START = 1
 STOP = 50
@@ -22,4 +23,6 @@ def log_gen_ziffer():
     progression = ' '.join(map(str, progression))
     question = f'{progression}'
     return question, str(correct_answer)
+
+
 log_gen_ziffer()

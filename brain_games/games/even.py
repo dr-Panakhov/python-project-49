@@ -1,5 +1,8 @@
 import random
+
 beschreibung = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 # Логика задачи
 def log_gen_ziffer():
     def is_even(number):
@@ -7,7 +10,7 @@ def log_gen_ziffer():
             return True
         else:
             return False
-    number = random.randrange(1,100)
+    number = random.randrange(1, 100)
     frage = f'{number}'
     if is_even(number):
         correct_anwort = 'yes'
