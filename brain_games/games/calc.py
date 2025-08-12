@@ -5,14 +5,14 @@ beschreibung = 'What is the result of the expression?'
 
 def log_gen_ziffer():
     operation = random.choice(['+', '-', '*'])
-    ziffer_1 = random.randrange(1, 50)
-    ziffer_2 = random.randrange(1, 50)
-    result = f'{ziffer_1}{operation}{ziffer_2}'
+    number1 = random.randrange(1, 50)
+    number2 = random.randrange(1, 50)
+    result = f'{number1}{operation}{number2}'
     if operation == '+':
-        richtige_anwort = ziffer_1 + ziffer_2
+        correct_answer = number1 + number2
     elif operation == '-':
-        richtige_anwort = ziffer_1 - ziffer_2
+        correct_answer = number1 - number2
     else:
-        richtige_anwort = ziffer_1 * ziffer_2
-    return result, str(richtige_anwort)
+        correct_answer = number1 * number2
+    return result, str(correct_answer)
 
