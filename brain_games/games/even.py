@@ -1,5 +1,7 @@
 import random
 
+from brain_games.games.calc import der_anfang, das_ende
+
 beschreibung = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -10,7 +12,7 @@ def log_gen_ziffer():
             return True
         else:
             return False
-    number = random.randrange(1, 100)
+    number = random.randrange(der_anfang, das_ende)
     frage = f'{number}'
     if is_even(number):
         correct_anwort = 'yes'

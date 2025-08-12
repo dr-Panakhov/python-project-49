@@ -2,11 +2,13 @@ from random import randint, choice
 
 beschreibung = 'What is the result of the expression?'
 
+der_anfang = 1
+das_ende = 50
 
 def log_gen_ziffer():
     operation = choice(['+', '-', '*'])
-    number1 = randint(1, 15)
-    number2 = randint(1, 15)
+    number1 = randint(der_anfang, das_ende)
+    number2 = randint(der_anfang, das_ende)
     question = f'{number1}{operation}{number2}'
     if operation == '+':
         correct_answer = number1 + number2
