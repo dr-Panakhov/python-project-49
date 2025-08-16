@@ -10,7 +10,7 @@ def log_gen_ziffer():
             if n % i == 0:
                 return False
         return True
-    number = randint(2, 100)
+    number = randint(2, 100) #NOSONAR
     question = f'{number}'
     if is_prime(number):
         correct_answer = 'yes'

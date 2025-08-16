@@ -12,12 +12,12 @@ PROGRESSION_LENGTH_STOP = 10
 def log_gen_ziffer():
 
     progression = []
-    number = randint(START, STOP)
-    step = randint(STEP_START, STEP_STOP)
-    for _ in range(randint(PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP)):
+    number = randint(START, STOP) #NOSONAR
+    step = randint(STEP_START, STEP_STOP) #NOSONAR
+    for _ in range(randint(PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP)): #NOSONAR
         progression.append(number)
         number = number + step
-    correct_answer = progression[randint(0, len(progression) - 1)]
+    correct_answer = progression[randint(0, len(progression) - 1)] #NOSONAR
     correct_answer_index = progression.index(correct_answer)
     progression[correct_answer_index] = '..'
     progression = ' '.join(map(str, progression))
