@@ -7,7 +7,7 @@ das_ende = 50
 
 def log_gen_ziffer():
     operation = choice(['+', '-', '*']) #NOSONAR
-    number1 = randint(der_anfang, das_ende)
+    number1 = randint(der_anfang, das_ende) #NOSONAR
     number2 = randint(der_anfang, das_ende) #NOSONAR
     question = f'{number1}{operation}{number2}' #NOSONAR
     if operation == '+':
