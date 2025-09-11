@@ -1,5 +1,5 @@
-.venv/
-__pycache__/
-.idea/
-.ruff_cache/
+.venv
+__pycache__
+.idea
+.ruff_cache
 

@@ -2,14 +2,14 @@ from random import randint, choice
 
 beschreibung = 'What is the result of the expression?'
 
-der_anfang = 1
-das_ende = 50
+start_n = 1
+stop_n= 50
 
 def log_gen_ziffer():
     operation = choice(['+', '-', '*']) #NOSONAR
-    number1 = randint(der_anfang, das_ende) #NOSONAR
-    number2 = randint(der_anfang, das_ende) #NOSONAR
-    question = f'{number1}{operation}{number2}' #NOSONAR
+    number1 = randint(start_n, stop_n) #NOSONAR
+    number2 = randint(start_n, stop_n) #NOSONAR
+    question = f'{number1} {operation} {number2}' #NOSONAR
     if operation == '+':
         correct_answer = number1 + number2
     elif operation == '-':
