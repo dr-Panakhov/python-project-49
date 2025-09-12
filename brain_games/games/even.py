@@ -1,8 +1,8 @@
 import random
 
-from brain_games.games.calc import der_anfang, das_ende
+from brain_games.games.calc import start_n, stop_n
 
-beschreibung = 'Answer "yes" if the number is even, otherwise answer "no".'
+description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # Логика задачи
@@ -12,12 +12,12 @@ def log_gen_ziffer():
             return True
         else:
             return False
-    number = random.randrange(der_anfang, das_ende) #NOSONAR
-    frage = f'{number}'
+    number = random.randrange(start_n, stop_n) #NOSONAR
+    question = f'{number}'
     if is_even(number):
-        correct_anwort = 'yes'
+        correct_answer = 'yes'
     else:
-        correct_anwort = 'no'
-    return frage, correct_anwort
+        correct_answer = 'no'
+    return question, correct_answer
 
 

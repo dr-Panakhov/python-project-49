@@ -1,6 +1,6 @@
 from random import randint, choice
 
-beschreibung = 'What is the result of the expression?'
+description = 'What is the result of the expression?'
 
 start_n = 1
 stop_n= 50

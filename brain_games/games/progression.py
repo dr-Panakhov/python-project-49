@@ -1,6 +1,6 @@
 from random import randint
 
-beschreibung = 'What number is missing in the progression?'
+description = 'What number is missing in the progression?'
 START = 1
 STOP = 50
 STEP_START = 3

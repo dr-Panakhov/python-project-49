@@ -1,6 +1,6 @@
 from random import randint
 
-beschreibung = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def log_gen_ziffer():
     def is_prime(n):
