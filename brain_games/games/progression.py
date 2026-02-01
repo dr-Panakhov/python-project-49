@@ -23,6 +23,3 @@ def log_gen_ziffer():
     progression = ' '.join(map(str, progression))
     question = f'{progression}'
     return question, str(correct_answer)
-
-
-log_gen_ziffer()
