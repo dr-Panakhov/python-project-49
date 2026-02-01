@@ -13,7 +13,7 @@ def log_gen_ziffer():
         else:
             return False
     number = random.randrange(start_n, stop_n) #NOSONAR
-    question = f' {number}'
+    question = f'{number}'
     if is_even(number):
         correct_answer = 'yes'
     else:
