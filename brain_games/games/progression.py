@@ -14,7 +14,9 @@ def log_gen_ziffer():
     progression = []
     number = randint(START, STOP)  # NOSONAR
     step = randint(STEP_START, STEP_STOP)  # NOSONAR
-    length = randint(PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP)  # NOSONAR
+    length = randint(
+        PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP
+    )  # NOSONAR
     for _ in range(length):
         progression.append(number)
         number = number + step
